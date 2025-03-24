@@ -3,15 +3,16 @@
 //Каков самый большой делитель числа 600851475143, являющийся простым числом?
 //*********************************************************************************************************
 
-// let simpleDel = 17;
+let simpleDel = 17;
 for (let simpleNum = 1; simpleNum <= 17; simpleNum++) {
     for (let i = 1; i <= simpleNum; i++) {
-        if (simpleNum % i === 0 ) {
+        if (simpleNum % i === 0) {
             if (i !== 1 && i !== simpleNum || simpleNum === 1) {
-                console.log(simpleNum,'-не простое число')
+                console.log(simpleNum, '-не простое число')
                 break
-            } if (i === simpleNum) {
-                console.log(simpleNum,'-простое число')
+            }
+            if (i === simpleNum) {
+                console.log(simpleNum, '-простое число')
             }
         }
     }
