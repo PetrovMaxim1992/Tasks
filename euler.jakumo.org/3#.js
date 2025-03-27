@@ -26,17 +26,19 @@
 console.time()
 let verNum;
 let simpleNum;
-let necNum = 255;
+let necNum = 600851475;
+let lastNum;
 for (let simpleNum = 2; simpleNum <= necNum; simpleNum++) { //цикл прогоняет все числа от 2 до necNum
     if (simpleNum % 2 !==0 && necNum % simpleNum === 0) {
         for (let verNum = 2; verNum <= simpleNum; verNum++) {
             if (simpleNum % verNum === 0) {
                 if (simpleNum === verNum) {
-                    console.log(simpleNum);
+                    lastNum = simpleNum;
                 }
                 break;
             }
         }
     }
 }
+console.log(lastNum);
 console.timeEnd()
