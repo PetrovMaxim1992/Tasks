@@ -65,13 +65,31 @@
 // Написать функцию, которая будет принимать в качестве входного параметра
 // массив любых, целых чисел, и будет возвращать среднее арифметическое
 // значение данного массива
-const min = 1;
-const max = 100;
-const massAnyNumber = [...Array(max)];
-    for (let i = 0; i < massAnyNumber.length; i ++) {
-        massAnyNumber[i] = Math.floor (Math.random()*max) ;
-    }
-    const midSum = massAnyNumber.reduce(function (currentSum,currentNumber) {
-        return currentSum + currentNumber;
-    },0)/max;
-console.log(massAnyNumber, midSum);
+// const min = 1;
+// const max = 100;
+// const massAnyNumber = [...Array(max)];
+//     for (let i = 0; i < massAnyNumber.length; i ++) {
+//         massAnyNumber[i] = Math.floor (Math.random()*max) ;
+//     }
+//     const midSum = massAnyNumber.reduce(function (currentSum,currentNumber) {
+//         return currentSum + currentNumber;
+//     },0)/max;
+// console.log(massAnyNumber, midSum);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Напишите стрелочную функцию, которая будет выводить переданную строку в консоль n раз
+//
+// let writeString = (necString = 'hi', numberRows=3) => {
+//
+//     //---------------Конструкция запроса на присвоение значения через консоль----------
+//     const prompt1 = require("prompt-sync")({ sigint: true });
+//     necString = prompt1("What write? ");
+//     const prompt2 = require("prompt-sync")({ sigint: true });
+//     numberRows = prompt2("How many times? ");
+//     //---------------Конструкция запрос а на присвоение значения через консоль----------
+//
+//     for (let i = 1; i <= numberRows; i++) {
+//         console.log(necString);
+//     }
+// }
+// writeString();
