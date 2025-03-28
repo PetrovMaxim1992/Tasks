@@ -104,3 +104,43 @@
 //     console.log(vowelLetters.includes(testLetter));
 // }
 // searchIsVowel();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Напишите стрелочную функцию, котрая будет возвращать true если строка является
+//палиндромом и false в противном случае
+
+// let word = 'а роза упала на лапу азора';
+// let noSpacesWord = word.replace(/\s/g, ''); //нашли пробелы
+// // и заменили их на пустые символы ('')
+// let checkPalindrome = () => {
+//     let massWord  = noSpacesWord.split(''); // преобразование строки
+//     // в массив
+//     massWord.reverse() //переворачиваем массив
+//     let revWord = massWord.join(''); //собираем массив в строку
+//     if (noSpacesWord===revWord) {
+//         console.log(`${word} - Палиндром`)
+//     } else {
+//         console.log(`${word} - Не палиндром`)
+//     }
+// };
+// checkPalindrome();
+
+// let word = 'а роза упала на лапу азора';
+// let revWord='';
+// let checkPalindrome = () => {
+//     noSpaceWord = word.replace(/\s/g, '');
+//     for (let i = noSpaceWord.length-1; i >=0; i--) {
+//         revWord = revWord + noSpaceWord[i];
+//     }
+//         console.log(noSpaceWord===revWord);
+// }
+// checkPalindrome();
+
+// let word = 'а роза упала на лапу азора';
+// let noSpacesWord = word.replace(/\s/g, ''); //нашли пробелы
+// // и заменили их на пустые символы ('')
+// let checkPalindrome = () => {
+//     let revWord  = noSpacesWord.split('').reverse().join('');
+//     console.log(noSpacesWord===revWord)
+// };
+// checkPalindrome();
