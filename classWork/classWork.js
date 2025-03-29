@@ -144,3 +144,54 @@
 //     console.log(noSpacesWord===revWord)
 // };
 // checkPalindrome();
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const arr= new Array(5);
+//
+// console.log(arr);
+// const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
+// const sumNum = (arr) => {
+//     const sum = arr.forEach((index)=> index%2 ===0);
+//     console.log(sum);
+//     return sum;
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Не РЕШЕНА!!!!!
+// Написать функцию, которая будет принимать массив чисел, и будет убирать повторяющиеся значения
+// из переданного массива, в качестве результата возвращать новый массив с уникальными значениями
+// из исходного.
+
+// const massNum = [1,2,3,4,5,1,2,3,4,5];
+// const delReplyMass = (massNum) => {
+//     const replyMass = massNum.indexOf((elem) => elem === elem);
+//     console.log(replyMass);
+// };
+// delReplyMass();
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Не РЕШЕНА!!!!!
+//Написать функцию  которая будет принимать два массива, и будет сравнивать их,
+// если они идентичны (элементы совпадают по значению и по индексу) то функция возвращает true,
+// в противном случае false.
+
+// const massNum1 = [1,2,3,4,5,1,2,3,4,5];
+// const massNum2 = [1,2,3,4,5,5];
+//  const massIdent = () => {
+//      let revWord = massNum1.join('');
+//      let revWord2 = massNum2.join('');
+//      console.log(revWord===revWord2);
+//  }
+// massIdent();
+//
+// const massNum1 = [1,2,3,4,5,1,2,3,4,5];
+// const massNum2 = [1,2,3,4,5,5];
+
+// const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const str = [1, 2, 3, 4, 5, 7, 8, 9, 10]
+//
+// function numStr(num, str) {
+//     return num.toString() === str.toString();
+// }
+
+// console.log(numStr(num, str));
