@@ -144,8 +144,51 @@
 //     console.log(noSpacesWord===revWord)
 // };
 // checkPalindrome();
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект myFavoriteFilm, описывающий ваш любимый фильм.
+// Объект должен содержать свойства с названием фильма, с датой выпуска,
+// именем режиссера и страной выпуска
+
+// let myFavoriteFilm = {
+//     name : 'Interstelar',
+//     yearOfProduction : 2014,
+//     director : 'Christopher Nolan',
+//     country : 'USA'
+// };
+// // console.log(myFavoriteFilm);
+//
+// //Добавить свойство содержащее значение выручки фильма в прокате
+//
+// myFavoriteFilm.fees ='736546575$';
+// // console.log(myFavoriteFilm);
+//
+// //Добавить метод, который будет выводить название фильма в консоль
+//
+// myFavoriteFilm.sayName = function() {
+//     console.log(myFavoriteFilm.name);
+// }
+// // myFavoriteFilm.sayName();
+//
+// //Удалить свойство содержащее год выпуска
+//
+// delete myFavoriteFilm.yearOfProduction;
+//
+// console.log(myFavoriteFilm);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Реализовать функцию которая будет принимать числовой диапазон в качестве параметров
+// [min,max] и будет возвращать случайное целое число из данного диапазона
+
+let min= 1;
+let max= 10;
+let randomNumber = () => {
+    let random = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(random);
+}
+randomNumber();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // const arr= new Array(5);
 //
 // console.log(arr);
