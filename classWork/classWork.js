@@ -184,7 +184,7 @@
 // let max= 10;
 // let randomNumber = () => {
 //     let random = Math.floor(Math.random()*(max-min+1)+min);
-//     console.log(random);
+//     return console.log(random);
 // }
 // randomNumber();
 
@@ -192,8 +192,24 @@
 //Реализовать функцию которая будет определять, в каком регистре записан n элемент
 // переданной строки,если в верхнем то вернуть true, в противном случае вернуть false
 
-let n = 2;
+// let n = 2;
+// let necString = 'МАКаронка';
+// let whatCase = () => {
+//     let upperString = necString.toUpperCase();
+//     return console.log(necString[n-1]===upperString[n-1]);
+// }
+// whatCase();
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Реализовать функцию которая заменяет в строке str, все вхождения подстроки find,
+//на подстроку  replace.
+
+let str = 'Максим';
+let replaceStr = () => {
+    let findStr = 'им';
+    let replaceStr = 'он';
+
+};
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
