@@ -204,14 +204,14 @@
 //Реализовать функцию которая заменяет в строке str, все вхождения подстроки find,
 //на подстроку  replace.
 
-let str = 'максим';
-let replaceStr = () => {
-    let findStr = 'м';
-    let replaceStr = 'л';
-    let newStr = str.replace(new RegExp(findStr,'g'), replaceStr);
-    return console.log(newStr);
-};
-replaceStr();
+// let str = 'максим';
+// let replaceStr = () => {
+//     let findStr = 'м';
+//     let replaceStr = 'л';
+//     let newStr = str.replace(new RegExp(findStr,'g'), replaceStr);
+//     return console.log(newStr);
+// };
+// replaceStr();
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
