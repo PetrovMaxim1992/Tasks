@@ -214,16 +214,71 @@
 // replaceStr();
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// const arr= new Array(5);
-//
+// let arr = new Array(5);
 // console.log(arr);
-// const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
-// const sumNum = (arr) => {
-//     const sum = arr.forEach((index)=> index%2 ===0);
-//     console.log(sum);
-//     return sum;
-// }
+// let arr2 = [1];
+// console.log(arr2);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//очистка массива
+//
+// let arr = [1,2,3,4,5];
+// let arr2 = [1,2,3,4,5];
+// console.log(arr);
+// arr.length = 0; //удаление данных из массива
+// console.log(arr);
+// arr = new Array(5).fill(1); //заполнение массива новыми данными
+// console.log(arr);
+// arr2 = new Array(5).fill(1); //заполнение данными без удаления
+// console.log(arr2);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//методы []
+
+// let mass = [1,2,3];
+// mass.push(2,1);
+// console.log(mass);
+// mass.unshift(2);
+// console.log(mass);
+// mass.pop();
+// console.log(mass);
+// mass.shift();
+// console.log(mass);
+// console.log(mass.indexOf(2,0));
+// console.log(mass.indexOf(6,0));
+// console.log(mass.includes(2,0));
+// console.log( Number (mass.includes(6,0)));
+//
+// let findElement = mass.find((num)=> num ===3);
+// console.log(findElement); //если значение элемента удовлетворяет условию
+// // возвращает его (первый из найденных элементов)
+//
+// let filterElement = mass.filter((num) => num % 2 === 0);
+// console.log(filterElement); //новый массив из значений элементов удовлетворяющих
+// //условию
+//
+// let mapArr = mass.map((num)=> num*10);
+// console.log(mapArr); //к каждому элементу применяет выражение
+//
+// mass.forEach((num)=> {
+//     console.log(num); //к каждому элементу применяет функцию
+// });
+//
+// let mapArrReduce = mapArr.reduce((sum,now) => sum + now);
+// console.log(mapArrReduce);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Написать функцию, которая будет принимать массив чисел, содержащий целые положительные
+//и целые отрицательные числа, в качеств результата возвращать сумму четных
+//положительных элементов переданного массива
+
+const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
+const sumNum = () => {
+     massNum.forEach((num)=> num % 2 === 0);
+    };
+    console.log(sumNum);
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Не РЕШЕНА!!!!!
 // Написать функцию, которая будет принимать массив чисел, и будет убирать повторяющиеся значения
