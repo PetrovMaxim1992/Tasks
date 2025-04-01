@@ -273,24 +273,36 @@
 //и целые отрицательные числа, в качеств результата возвращать сумму четных
 //положительных элементов переданного массива
 
-const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
-const sumNum = () => {
-     massNum.forEach((num)=> num % 2 === 0);
-    };
-    console.log(sumNum);
+// const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
+// // const sumNum = (num) => {
+// //     console.log(massNum.filter((num)=> num % 2 === 0 && num > 0)
+// //         .reduce((sum,number) => sum + number))
+// // };
+// // sumNum();
+//
+// const massNum = [1,2,3,4,5,-1,-2,-3,-4,-5];
+// const sumEvenPositiveNumbers = () => {
+//     let sum = 0;
+//     massNum.filter((num)=> num % 2 === 0 && num > 0)
+//         .forEach((num) => {
+//         sum += num;
+//     });
+//     console.log(sum);
+// }
+// sumEvenPositiveNumbers()
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Написать функцию, которая будет принимать массив чисел, и будет убирать повторяющиеся
+// значения из переданного массива, в качестве результата возвращать новый массив с
+// уникальными значениями из исходного.
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Не РЕШЕНА!!!!!
-// Написать функцию, которая будет принимать массив чисел, и будет убирать повторяющиеся значения
-// из переданного массива, в качестве результата возвращать новый массив с уникальными значениями
-// из исходного.
-
-// const massNum = [1,2,3,4,5,1,2,3,4,5];
-// const delReplyMass = (massNum) => {
-//     const replyMass = massNum.indexOf((elem) => elem === elem);
-//     console.log(replyMass);
-// };
-// delReplyMass();
+const massNum = [1,2,3,4,5,1,2,3,4,5];
+const delReplyMass = () => {
+    const replyMass = massNum.filter((num,index) =>
+        massNum.indexOf(num) === index);
+    console.log(replyMass);
+};
+delReplyMass();
 
 
 
