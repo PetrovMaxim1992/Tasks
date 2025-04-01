@@ -296,17 +296,15 @@
 // значения из переданного массива, в качестве результата возвращать новый массив с
 // уникальными значениями из исходного.
 
-const massNum = [1,2,3,4,5,1,2,3,4,5];
-const delReplyMass = () => {
-    const replyMass = massNum.filter((num,index) =>
-        massNum.indexOf(num) === index);
-    console.log(replyMass);
-};
-delReplyMass();
+// const massNum = [1,2,3,4,5,1,2,3,4,5];
+// const delReplyMass = () => {
+//     const replyMass = massNum.filter((num,index) =>
+//         massNum.indexOf(num) === index);
+//     console.log(replyMass);
+// };
+// delReplyMass();
 
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Не РЕШЕНА!!!!!
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Написать функцию  которая будет принимать два массива, и будет сравнивать их,
 // если они идентичны (элементы совпадают по значению и по индексу) то функция возвращает true,
 // в противном случае false.
@@ -319,15 +317,59 @@ delReplyMass();
 //      console.log(revWord===revWord2);
 //  }
 // massIdent();
-//
+
 // const massNum1 = [1,2,3,4,5,1,2,3,4,5];
-// const massNum2 = [1,2,3,4,5,5];
+// const massNum2 = [1,2,3,4,5,5,3,3,4,6];
+// const massIdent = () => {
+//     if (massNum1.length === massNum2.length) {
+//         massNum1.forEach((num,index) => {
+//             console.log(massNum1[index] === massNum2[index])
+//         });
+//     }
+// };
+// massIdent();
 
-// const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const str = [1, 2, 3, 4, 5, 7, 8, 9, 10]
-//
-// function numStr(num, str) {
-//     return num.toString() === str.toString();
+// const massNum1 = [1,2,3,4,5,1,2,3,4,5];
+// const massNum2 = [1,2,3,4,5,1,2,3,4,5];
+// const massIdent = () => {
+//     if (massNum1.length === massNum2.length) {
+//         console.log(massNum1.every((num,index) =>
+//             num === massNum2[index]));
+//     }
+// };
+// massIdent();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект и скопируйте данный объект с помощью: Object.assign() и spread
+//опреатора. Изменить любое свойство в копии объекта, и проверить, не изменился
+//ли исходный.
+
+// const user = {
+//     FIO: { name:'John',
+//         surname: 'Petrov',
+//     },
+//     age: 23,
+//     job: 'engineer'
 // }
+// console.log(user);
+// const copyUser = Object.assign(user)
+// console.log(copyUser);
+// copyUser.FIO = 'Max';
+// console.log(copyUser);
+// console.log(user);
 
-// console.log(numStr(num, str));
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Написать функцию, которая будет принимать n-ое количество аргументов, в качестве
+//результата функция будет возвращать сумму всех четных элементов. Для решения
+//использовать цикл for(...of...).
+
+const arr = [1,2,3,4,5,6,7,8,9]
+const sumNumb =() => {
+    let sum = 0;
+    for (let num of arr) {
+    arr.filter((num)=> num % 2 === 0)
+        .reduce((sum,number) => sum + number)
+        }
+    console.log(sum);
+}
+sumNumb();
