@@ -151,7 +151,7 @@
 // именем режиссера и страной выпуска
 
 // let myFavoriteFilm = {
-//     name : 'Interstelar',
+//     name : 'Interstellar',
 //     yearOfProduction : 2014,
 //     director : 'Christopher Nolan',
 //     country : 'USA'
