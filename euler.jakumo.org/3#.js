@@ -23,45 +23,22 @@
 //     }
 // }
 
-console.time()
-let verNum;
-let simpleNum;
-let necNum = 999999999;
-let lastNum;
-for (let simpleNum = 2; simpleNum <= necNum; simpleNum++) { //цикл прогоняет все числа от 2 до necNum
-    if (simpleNum % 2 !==0 && necNum % simpleNum === 0) {
-        for (let verNum = 2; verNum <= simpleNum; verNum++) {
-            if (simpleNum % verNum === 0) {
-                if (simpleNum === verNum) {
-                    lastNum = simpleNum;
-                }
-                break;
-            }
-        }
-    }
-}
-console.log(lastNum);
-console.timeEnd()
-
-// function largestPrimeFactor(n) {
-//     let largestFactor = 1;
-//     // Проверяем делимость на 2
-//     while (n % 2 === 0) {
-//         largestFactor = 2;
-//         n /= 2;
-//     }
-//     // Проверяем нечётные делители от 3 до √n
-//     for (let i = 3; i <= Math.sqrt(n); i += 2) {
-//         while (n % i === 0) {
-//             largestFactor = i;
-//             n /= i;
+// console.time()
+// let verNum;
+// let simpleNum;
+// let necNum = 999999999;
+// let lastNum;
+// for (let simpleNum = 2; simpleNum <= necNum; simpleNum++) { //цикл прогоняет все числа от 2 до necNum
+//     if (simpleNum % 2 !==0 && necNum % simpleNum === 0) {
+//         for (let verNum = 2; verNum <= simpleNum; verNum++) {
+//             if (simpleNum % verNum === 0) {
+//                 if (simpleNum === verNum) {
+//                     lastNum = simpleNum;
+//                 }
+//                 break;
+//             }
 //         }
 //     }
-//     // Если оставшееся n > 2, оно простое
-//     if (n > 2) {
-//         largestFactor = n;
-//     }
-//     return largestFactor;
 // }
-// const number = 600851475;
-// console.log(largestPrimeFactor(number)); // 6857
+// console.log(lastNum);
+// console.timeEnd()
