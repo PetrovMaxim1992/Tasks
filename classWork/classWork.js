@@ -344,14 +344,14 @@
 //опреатора. Изменить любое свойство в копии объекта, и проверить, не изменился
 //ли исходный.
 
-const user = {
-    FIO: { name:'John',
-        surname: 'Petrov',
-    },
-    age: 23,
-    job: 'engineer'
-}
-// console.log(user);
+// const user = {
+//     FIO: { name:'John',
+//         surname: 'Petrov',
+//     },
+//     age: 23,
+//     job: 'engineer'
+// }
+// // console.log(user);
 // const useMetAssign = () => {
 // const copyUser = Object.assign({},user)
 // console.log(copyUser);
@@ -399,6 +399,125 @@ const user = {
 //     }
 //     searchSimm();
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте массив из чисел от 1 до 5. Используя цикл for, выведите все элементы
+//массива в консоль.
+
+// const arr = [1,2,3,4,5];
+// for ( let index = 0; index < 5; index++) {
+//     console.log( arr[index]);
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект с полями name и age. Заполните их произвольными значениями
+//и выведите объект в консоль.
+
+// const user = {
+//     name: 'Max',
+//     age: 18
+// }
+// console.log(user);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте массив объектов с полями name и age. Заполните их произвольными значениями
+// и выведите массив в консоль.
+
+// const user = {
+//     name: 'Max',
+//     age: 32
+// }
+// const arr = new Array(5).fill(user)
+// console.log(arr)
+
+// const user = [
+//     {name: 'Max', age: 32},
+//     {name: 'Kate', age: 30},
+// ];
+// console.log(user);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте массив из чисел от 1 до 10. Используя метод filter,
+//создайте новый массив, содержащий только четные числа.
+
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+// const newArr = arr.filter((num) => num % 2 ===0);
+// console.log(newArr);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект с методом, который выводит в консоль строку "Hello, world!".
+
+// const objectWithMet = {
+//     sayHello : function () {
+//         console.log("Hello World!");
+//     }
+// }
+// objectWithMet.sayHello();
+
+// let arr = {
+//     filter: function () {
+//         console.log("NOT A FILTER ;)");
+//     }
+// }
+// arr.filter()
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте функцию, которая принимает массив чисел и возвращает сумму этих чисел.
+
+// const arr = [1,2,3,4,5];
+//
+// const sumNumMassReduce = () => {
+//  const sum = arr.reduce((sum,num) => sum + num)
+//     return console.log(sum);
+// }
+// sumNumMassReduce();
+//
+// const sumNumMassFor = () => {
+//     let sum = 0;
+//     for (let index = 0; index < arr.length + 1; index++) {
+//         sum += index
+//     }
+//     console.log(sum);
+// }
+// sumNumMassFor();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект, содержащий информацию о человеке: имя, возраст,
+// город и телефон. Напишите функцию, которая принимает этот объект в
+// качестве аргумента и выводит информацию о человеке в консоль.
+
+// const user = {
+//     name: "John",
+//     age: 35,
+//     city: 'London',
+//     tel: '89022345678'
+// }
+// const printUser = (user) => {
+//     console.log('User name : ' + user.name);
+//     console.log('age: ' + user.age);
+//     console.log('Live in ' + user.city);
+//     console.log('Telephone number - ' +user.tel);
+// }
+// printUser(user);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте функцию, которая принимает массив объектов с полями name и age и
+// возвращает массив имен людей, возраст которых больше 25 лет.
 
 
-
+// const user1 = {
+//     name: "John",
+//     age: 32
+// };
+// const user2 = {
+//     name: "Mark",
+//     age: 18
+// };
+// const user3 = {
+//     name: "Joe",
+//     age: 25
+// };
+// const sortUsersAge = () => {
+//     let arr = [user1, user2, user3];
+//     console.log(arr.filter((user) => user.age > 25));
+// };
+// sortUsersAge();
