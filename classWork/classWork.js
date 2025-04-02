@@ -344,32 +344,46 @@
 //опреатора. Изменить любое свойство в копии объекта, и проверить, не изменился
 //ли исходный.
 
-// const user = {
-//     FIO: { name:'John',
-//         surname: 'Petrov',
-//     },
-//     age: 23,
-//     job: 'engineer'
+const user = {
+    FIO: { name:'John',
+        surname: 'Petrov',
+    },
+    age: 23,
+    job: 'engineer'
+}
+// console.log(user);
+// const useMetAssign = () => {
+// const copyUser = Object.assign({},user)
+// console.log(copyUser);
+// copyUser.age = 'Max';
+// console.log(copyUser);
+// console.log(user);
 // }
-// console.log(user);
-// const copyUser = Object.assign(user)
-// console.log(copyUser);
-// copyUser.FIO = 'Max';
-// console.log(copyUser);
-// console.log(user);
+// // useMetAssign();
+//
+// const useSpread = () => {
+//     const copyUser = {...user};
+//     console.log(copyUser);
+//     copyUser.age = 'Max';//изменение ключа 1-го уровня вложенности
+//     copyUser.FIO.name = 'engineer'; //изменение ключа 2-го уровня вложенности
+//     console.log(user);
+//     console.log(copyUser);
+// }
+// useSpread();
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Написать функцию, которая будет принимать n-ое количество аргументов, в качестве
 //результата функция будет возвращать сумму всех четных элементов. Для решения
 //использовать цикл for(...of...).
 
-const arr = [1,2,3,4,5,6,7,8,9]
-const sumNumb =() => {
-    let sum = 0;
-    for (let num of arr) {
-    arr.filter((num)=> num % 2 === 0)
-        .reduce((sum,number) => sum + number)
-        }
-    console.log(sum);
-}
-sumNumb();
+// const arr = [1,2,3,4,5,6,7,8,9]
+// const sumNumb = () => {
+//     let sum = 0;
+//     for (let num of arr) {
+//         if (num % 2 === 0) {
+//             sum += num;
+//         }
+//     }
+//     console.log(sum);
+// }
+// sumNumb();
