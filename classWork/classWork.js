@@ -521,3 +521,37 @@
 //     console.log(arr.filter((user) => user.age > 25));
 // };
 // sortUsersAge();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте объект, содержащий информацию о книге: название, автор и количество
+//страниц. Напишите функцию, которая принимает этот объект в качестве аргумента
+// и выводит информацию о книге в консоль.
+
+// const book = {
+//     name: 'The End of Eternity',
+//     author: 'Isaac Asimov',
+//     numberOfPages: 256
+// };
+// const printInfo = () => {
+//     console.log('Название книги: ' + book.name);
+//     console.log('Автор книги: ' + book.author);
+//     console.log('Кол-во страниц - ' + book.numberOfPages);
+// };
+// printInfo();
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Создайте функцию, которая принимает два массива и возвращает новый массив,
+// содержащий элементы обоих массивов.
+
+// const arr1 = ['1','2','3','4'];
+// const arr2 = ['one','two','three','four'];
+// const sumTwoArrSpreed = () => {
+//     console.log([...arr1,...arr2]);
+// }
+// sumTwoArrSpreed()
+//
+// const sumTwoArrConcat = () => {
+//     console.log(arr1.concat(arr2));
+// }
+// sumTwoArrConcat();
+
