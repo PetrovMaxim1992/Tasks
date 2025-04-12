@@ -23,17 +23,26 @@
 // не менее 2.
 // 0, в других случаях.
 
-const exam = 80;
-const project = 3;
-const finalGrade = (exam, project) => {
-    if (exam > 90 || project > 10) {
-        return 100;
-    } else if (exam > 75 && project >= 5) {
-        return 90;
-    } else if (exam > 50 && project >= 2) {
-        return 75;
-    } else return 0;
+// const exam = 80;
+// const project = 3;
+// const finalGrade = (exam, project) => {
+//     if (exam > 90 || project > 10) {
+//         return 100;
+//     } else if (exam > 75 && project >= 5) {
+//         return 90;
+//     } else if (exam > 50 && project >= 2) {
+//         return 75;
+//     } else return 0;
+//
+// }
+// finalGrade(exam,project);
+// console.log(finalGrade(exam,project));
 
-}
-finalGrade(exam,project);
-console.log(finalGrade(exam,project));
+// Это довольно просто. Ваша цель - создать функцию, которая удаляет первый и последний символы строки.
+// Вам предоставляется один параметр, исходная строка. Вам не нужно беспокоиться о строках, содержащих
+// менее двух символов.
+const str = 'максим';
+const arrStr = str.split('');
+arrStr.splice(0,1)
+arrStr.splice(arrStr.length-1,1);
+console.log(arrStr);
