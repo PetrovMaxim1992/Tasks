@@ -555,3 +555,50 @@
 // }
 // sumTwoArrConcat();
 
+
+// function example() {
+//     const b = {
+//         name,
+//     };
+//     console.log(this);
+//
+// }
+// example();
+// //     const testObject = {
+// //         testMethod:example
+// //     }
+// // testObject.testMethod();
+
+// Создать объект который будет описывать любой населенный пункт (на ваш выбор).
+// Объект должен содержать свойства описывающие: название и численность.
+// Так же объект должен содержать два метода: первый должен возвращать название города,
+// а второй должен возвращать численность.
+// *Дополнительно, добавить метод, который будет устанавливать новое значение для выбранного
+// свойства из объекта описывающего город.
+
+function printName () {
+    console.log(this.name);
+}
+
+function printPop () {
+    console.log(this.pop);
+}
+
+function changeName (newName) {
+    console.log(this.name = newName);
+}
+
+
+const town = {
+    name: "NiNo",
+    pop: 1500000,
+    nameMethod:printName,
+    popMethod:printPop,
+    newNameMethod: changeName
+}
+
+town.nameMethod ();
+town.popMethod ();
+town.newNameMethod('moscow');
+
+
