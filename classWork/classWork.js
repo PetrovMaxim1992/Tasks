@@ -37,7 +37,7 @@
 // если имени пользователя нет, выводить приветствие гостя/
 
 // const prompt = require("prompt-sync")({ sigint: true });
-// let userName = prompt("What is your name?",'gues');
+// let userName = prompt("What is your name?",'guest');
 //
 // const toGreet = (userName='guest') => {
 //     console.log(`Hi,${userName}`);
