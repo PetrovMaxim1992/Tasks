@@ -41,8 +41,10 @@
 // Это довольно просто. Ваша цель - создать функцию, которая удаляет первый и последний символы строки.
 // Вам предоставляется один параметр, исходная строка. Вам не нужно беспокоиться о строках, содержащих
 // менее двух символов.
-const str = 'максим';
-const arrStr = str.split('');
-arrStr.splice(0,1)
-arrStr.splice(arrStr.length-1,1);
-console.log(arrStr);
+// const str = 'максим';
+// const arrStr = str.split('');
+// arrStr.splice(0,1)
+// arrStr.splice(arrStr.length-1,1);
+// console.log(arrStr);
+
+
